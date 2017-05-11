@@ -1,6 +1,6 @@
 # MiditoText
 
-Using Midicsv, This program converts MID files to TXT. Made for Karpathy's [char-rnn](github.com/karpathy/char-rnn) training set generation. Only works for the 88 keys in standard pianos. INCOMPLETE.
+Using Midicsv, This program converts MID files to TXT. Made for Karpathy's [char-rnn](https://github.com/karpathy/char-rnn) training set generation. Only works for the 88 keys in standard pianos. INCOMPLETE.
 
 ## Motivation
 
@@ -8,11 +8,11 @@ Largely based on [this](https://www.youtube.com/watch?v=SacogDL_4JU&t=634s) vide
 
 ## Installation
 
-No installation needed. Download John Walker's [Midicsv](fourmilab.ch/webtools/midicsv/).
+No installation needed. Download John Walker's [Midicsv](https://fourmilab.ch/webtools/midicsv/).
 
 ## Reference
 
-For Midicsv instructions, visit John Walker's [site](fourmilab.ch/webtools/midicsv/). This description will use terms explained on detail on that site. All of my programs are only made with basic C++ knowledge. Visit Karpathy's [char-rnn](github.com/karpathy/char-rnn) for the wonderful LSTM he made.
+For Midicsv instructions, visit John Walker's [site](https://fourmilab.ch/webtools/midicsv/). This description will use terms explained on detail on that site. All of my programs are only made with basic C++ knowledge. Visit Karpathy's [char-rnn](https://github.com/karpathy/char-rnn) for the wonderful LSTM he made.
 
 ## Tests
 

@@ -99,7 +99,7 @@ HJL HJL HJL HJL L L L L
 * John Walker for creating MidiToCSV. Seriously, what I did was minimal.
 
 ## Todos
-* Unfortunately, this loses a lot of information. For example, notes get sqaushed into 8ths of the division, and notes that turn off and turns right back on at the same time is considered a continued note.  Currently working on Mascii converter. This will hopefully solve most problems.
+* Unfortunately, this loses a lot of information. For example, notes get sqaushed into 8ths of the division, and notes that turn off and turns right back on at the same time is considered a continued note.  Currently working on [Mascii](http://mascii.org/) converter. This will hopefully solve most problems.
 * Most importantly, char-rnn does not like this. It's too unstructured for the LSTM to follow, and the error did not go below 0.54 during 500 iterations on a 10MB dataset. I tried the raw output from MiditoCSV, but it's too structured for the LSTM to produce a MID-convertible CSV file. As I said, Mascii will hopefully solve this.
 
 ## Comments

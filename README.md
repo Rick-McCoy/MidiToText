@@ -12,7 +12,7 @@ No installation needed. Download John Walker's [Midicsv](fourmilab.ch/webtools/m
 
 ## Reference
 
-For Midicsv instructions, visit John Walker's [site](fourmilab.ch/webtools/midicsv/). All of my programs are only made with basic C++ knowledge. Visit Karpathy's [char-rnn](github.com/karpathy/char-rnn) for the wonderful LSTM he made.
+For Midicsv instructions, visit John Walker's [site](fourmilab.ch/webtools/midicsv/). This description will use terms explained on detail on that site. All of my programs are only made with basic C++ knowledge. Visit Karpathy's [char-rnn](github.com/karpathy/char-rnn) for the wonderful LSTM he made.
 
 ## Tests
 

@@ -75,30 +75,13 @@ int main(void)
 		v.pop_back();
 		for(auto i:v)
 		{
-			tmpint1 = 0;
-			for(auto j:i[0])
-				tmpint1 = 10*tmpint1+j-48;
-			if(tmpint1<basetime) basetime = tmpint1;
-		}
-		for(auto i:v)
-		{
-			tmpint1 = 0;
-			for(auto j:i[0])
-				tmpint1 = 10*tmpint1+j-48;
-			if(tmpint1>endtime) endtime = tmpint1;
+			basetime = min(basetime, stoi(i[0]));
+			endtime = max(endtime, stoi(i[0]));
 		}
 		endtime = 8*(endtime-basetime)/div;
 		printf("%d: %d %d %d\n", x, div, basetime, endtime);
 		for(auto i:v)
-		{
-			tmpint1 = 0;
-			tmpint2 = 0;
-			for(auto j:i.front())
-				tmpint1 = 10*tmpint1+j-48;
-			for(auto j:i.back())
-				tmpint2 = 10*tmpint2+j-48;
-			Note[tmpint2].push_back(8*(tmpint1-basetime)/div);
-		}
+			Note[stoi(i.back())].push_back(8*(stoi(i.front())-basetime)/div);
 		for(int i=0;i<200;i++)
 			if(Note[i].size()>0)
 				for(auto j:Note[i])

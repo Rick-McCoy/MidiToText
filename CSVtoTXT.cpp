@@ -4,27 +4,16 @@ int main(void)
 {
 	for(int x=1;x<=1;x++)
 	{
-		char name1[10] = {0}, name2[10] = {0}, c = 'a';
-		int k = x, y = 0, div = 0, tmpint1 = 0, tmpint2 = 0, basetime = 0, endtime = 0;
-		string num, tmpstr;
-		vector<vector<string>> v, f;
+		char *name1, c = 'a';
+		int y = 0, div = 0, basetime = 0, endtime = 0;
+		vector<vector<string>> v;
 		vector<int> Note[200];
 		vector<char> Time[80000];
-		string on = "Note_on_c", off = "Note_off_c", head = "Header";
+		string num, on = "Note_on_c", off = "Note_off_c", head = "Header";
 		bool Tr[88] = {0};
 		num = to_string(x);
-		while(num.size())
-		{
-			name1[y++] = num.back();
-			name2[y-1] = num.back();
-			num.pop_back();
-		}
-		name1[y] = name2[y] = '.';
-		name1[y+1] = 'c';
-		name1[y+2] = 's';
-		name1[y+3] = 'v';
-		name2[y+1] = name2[y+3] = 't';
-		name2[y+2] = 'x';
+		num.append(".csv");
+		name1 = &num[0];
 		FILE *fp1 = fopen(name1, "r"), *fp2 = fopen("input.txt", "a+");
 		if(!fp1||!fp2)
 		{
@@ -55,9 +44,9 @@ int main(void)
 		for(int i=0;i<v.size();i++)
 			if(v[i][2]!=head&&v[i][2]!=on&&v[i][2]!=off)
 				v.erase(v.begin()+i--);
-			else if(v[i][2] == head) v[i][2] = "h";
+			/*else if(v[i][2] == head) v[i][2] = "h";
 			else if(v[i][2] == on) v[i][2] = "n";
-			else if(v[i][2] == off) v[i][2] = "f";
+			else if(v[i][2] == off) v[i][2] = "f";*/
 		for(int i=1;i<v.size();i++)
 		{
 			v[i].erase(v[i].begin());

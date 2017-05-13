@@ -11,12 +11,8 @@ int main(void)
 		vector<int> Note[200];
 		vector<char> Time[80000];
 		string on = "Note_on_c", off = "Note_off_c", head = "Header";
-		bool Tr[200] = {0};
-		while(k!=0)
-		{
-			num.push_back(k%10+48);
-			k = (k-k%10)/10;
-		}
+		bool Tr[88] = {0};
+		num = to_string(x);
 		while(num.size())
 		{
 			name1[y++] = num.back();
@@ -68,9 +64,7 @@ int main(void)
 			v[i].erase(v[i].begin()+2);
 			v[i].erase(v[i].end());
 		}
-		tmpstr = v[0][5];
-		for(auto i:v[0][5])
-			div = 10*div+i-48;
+		div = stoi(v[0][5]);
 		v.erase(v.begin());
 		v.pop_back();
 		for(auto i:v)

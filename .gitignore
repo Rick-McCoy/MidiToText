@@ -215,3 +215,6 @@ pip-log.txt
 #Mr Developer
 .mr.developer.cfg
 *.exe
+input1.txt
+input2.txt
+1.csv

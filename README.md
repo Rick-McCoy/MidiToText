@@ -1,6 +1,6 @@
 # MiditoText
 
-Using Midicsv, This program converts MID files to TXT. Made for Karpathy's [char-rnn](https://github.com/karpathy/char-rnn) training set generation. Only works for the 88 keys in standard pianos. INCOMPLETE.
+Using Midicsv, This program converts MID files to TXT. Made for Karpathy's [char-rnn](https://github.com/karpathy/char-rnn) training set generation. Only works for the 88 keys in standard pianos. ABANDONED.
 
 ## Motivation
 
@@ -105,6 +105,8 @@ HJL HJL HJL HJL L L L L
 ## Comments
 
 A novice coder will produce a better program in 10 minutes. This hopefully will not have any bugs.
+
+NOTE: After discovering [ABC Notation](http://abcnotation.com/), I concluded that this is far more useful than Mascii. There is a MidiToABC tool out there in the internet. THEREFORE THIS PROJECT IS CLOSED.
 
 Contact: rickmccoy3141@gmail.com
 
